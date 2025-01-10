@@ -32,6 +32,10 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send("up");
+});
+
 app.get("/health", (req, res) => {
   res.status(200).send("Ok");
 });
