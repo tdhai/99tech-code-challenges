@@ -79,6 +79,6 @@ mongoose
  * Server Activation
  */
 http.createServer(app);
-app.listen(7000, () => {
+app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
