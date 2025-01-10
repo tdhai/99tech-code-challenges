@@ -11,7 +11,7 @@ export const createInfo = async ({
   try {
     return Information.create({ name, age });
   } catch (error) {
-    console.log("🚀 ~ createInfo error", error);
+    console.log("🚀 ~ createInfo error:", error);
     throw error;
   }
 };
