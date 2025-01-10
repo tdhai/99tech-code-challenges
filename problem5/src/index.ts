@@ -6,6 +6,8 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import http from "http";
+import { getPrefixPath } from "./config";
+import informationRouter from "./router/information";
 
 dotenv.config();
 /**
@@ -31,6 +33,8 @@ app.use(express.json());
 app.get("/health", (req, res) => {
   res.status(200).send("Ok");
 });
+
+app.use(getPrefixPath("v1"), informationRouter);
 
 /**
  * Server Activation
