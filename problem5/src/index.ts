@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-  res.status(200).send("Ok");
+  res.status(200).send("Okk");
 });
 
 app.use(getPrefixPath("v1"), informationRouter);
