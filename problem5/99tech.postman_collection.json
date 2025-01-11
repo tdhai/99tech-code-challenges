@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "24257722-602d-441e-833f-bda8e83d9cf3",
+		"name": "99tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7501619"
+	},
+	"item": [
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "check health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get info list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create info",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": \"99\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos/67809fecdaf862217e55a30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos",
+								"67809fecdaf862217e55a30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete info",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos/67809fecdaf862217e55a30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos",
+								"67809fecdaf862217e55a30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": " http://localhost:7000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"age\": \"69\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vercel",
+			"item": [
+				{
+					"name": "check health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://99tech-code-challenges.vercel.app/health",
+							"protocol": "https",
+							"host": [
+								"99tech-code-challenges",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get info list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://99tech-code-challenges.vercel.app/v1/99tech/code-challenge/infos",
+							"protocol": "https",
+							"host": [
+								"99tech-code-challenges",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create info",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": \"99\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos/67809fecdaf862217e55a30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos",
+								"67809fecdaf862217e55a30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete info",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000/v1/99tech/code-challenge/infos/67809fecdaf862217e55a30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000",
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos",
+								"67809fecdaf862217e55a30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check server ready",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7000"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"age\": \"69\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://99tech-code-challenges.vercel.app/v1/99tech/code-challenge/infos",
+							"protocol": "https",
+							"host": [
+								"99tech-code-challenges",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"v1",
+								"99tech",
+								"code-challenge",
+								"infos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
