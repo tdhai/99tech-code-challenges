@@ -1,0 +1,43 @@
+@startuml
+title Flow brain StorageFontName
+actor customer
+participant leaderboardService
+participant actionService
+database DB
+
+customer -> leaderboardService: Api check user exist
+leaderboardService -> DB
+DB --> leaderboardService
+leaderboardService --> customer
+
+alt #LightBlue Not have account 
+    customer -> leaderboardService: Register account in our system
+    leaderboardService -> DB
+    DB --> leaderboardService
+    leaderboardService --> customer: return token
+end
+
+alt #LightCoral have account 
+    customer -> leaderboardService: login api with username/password/phone...
+    leaderboardService -> DB
+    DB --> leaderboardService
+    leaderboardService --> customer: return token
+end
+
+customer -> actionService: play game with token
+actionService -> DB
+DB --> actionService
+actionService --> customer: return game to play
+
+customer -> leaderboardService: api update score after play game
+leaderboardService -> DB
+DB --> leaderboardService
+leaderboardService --> customer
+
+customer -> leaderboardService: get top 10
+leaderboardService -> DB
+DB --> leaderboardService
+leaderboardService --> customer
+
+
+@enduml
