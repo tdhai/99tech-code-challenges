@@ -1,9 +1,17 @@
-1./ How to run this service local
+- [Big rock](#big-rock)
+- [How to run this service local](#how-to-run-this-service-local)
+- [How to test](#how-to-test)
+- [TODO:](#todo)
+
+# Big rock
+- Because we are using free cloud and DB so sometimes we call get api will timeout, please retry again
+
+# How to run this service local
 -> npm run dev
 
-2./ How to test
+# How to test
 Import postman collection and run one by one api
 
-3./ TODO:
+# TODO:
 - Validation input
 - Error handling for case GET/POST/PATCH information is deleted -> return 404
